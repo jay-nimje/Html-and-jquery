@@ -1,0 +1,44 @@
+1. What is jquery?
+
+And: jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event     handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.
+
+2. How to Apply CSS Using Jquery, How to Add Class and Remove class in jquery, jquery Animation?
+
+Ans: We can use jquery's . css() method to apply CSS style on the given webpage. jQuery is a javascript library that helps us manipulate the DOM 	 easily and efficiently using its various helper methods and properties.
+
+	- addClass() - Adds one or more classes to the selected elements.
+	- removeClass() - Removes one or more classes from the selected elements.
+	- toggleClass() - Toggles between adding/removing classes from the selected elements.
+	- css() - Sets or returns the style attribute.
+
+3. How to create slider with animation?
+
+Ans: <!DOCTYPE html>
+	 <html lang="en">
+	 <head>
+    	 <meta charset="UTF-8">
+    	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	 <title>Document</title>
+    	 <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    	 <!-- cycle.min.js -->
+    	 <script src="https://malsup.github.io/jquery.cycle.all.js"></script>
+	</head>
+	<body>
+
+    	<div id="slide">
+        	<img src="images/1.jpg" height="312px" width="450px" class="slider">
+        	<img src="images/2.jpg" height="312px" width="450px" class="slider">
+        	<img src="images/3.jpg"  height="312px" width="450px" class="slider">
+    	</div>
+
+        <!-- slider apply here -->
+        <script type="text/javascript">
+            $(document).ready(function()
+            {
+                $("#slide").cycle("fade");
+                $("#slide img").css("overflow-y","hidden");
+            });
+        </script>
+</body>
+</html>
